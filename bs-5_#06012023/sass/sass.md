@@ -113,3 +113,13 @@ $theme-colors: map-remove($theme-colors, "info", "light", "dark");
 Bootstrap assumes the presence of some specific keys within Sass maps as we used and extend these ourselves. As you customize the included maps, you may encounter errors where a specific Sass map’s key is being used.
 
 For example, we use the primary, success, and danger keys from $theme-colors for links, buttons, and form states. Replacing the values of these keys should present no issues, but removing them may cause Sass compilation issues. In these instances, you’ll need to modify the Sass code that makes use of those values.
+
+```Functions
+Colors
+Next to the Sass maps we have, theme colors can also be used as standalone variables, like $primary.
+
+Copy
+.custom-element {
+  color: $gray-100;
+  background-color: $dark;
+}
