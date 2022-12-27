@@ -123,3 +123,19 @@ Copy
   color: $gray-100;
   background-color: $dark;
 }
+
+
+```Color contrast
+
+In order to meet WCAG 2.0 accessibility standards for color contrast, authors must provide a contrast ratio of at least 4.5:1, with very few exceptions.
+
+An additional function we include in Bootstrap is the color contrast function, color-contrast. It utilizes the WCAG 2.0 algorithm for calculating contrast thresholds based on relative luminance in a sRGB colorspace to automatically return a light (#fff), dark (#212529) or black (#000) contrast color based on the specified base color. This function is especially useful for mixins or loops where you’re generating multiple classes.
+
+For example, to generate color swatches from our $theme-colors map:
+
+Copy
+@each $color, $value in $theme-colors {
+  .swatch-#{$color} {
+    color: color-contrast($value);
+  }
+}
