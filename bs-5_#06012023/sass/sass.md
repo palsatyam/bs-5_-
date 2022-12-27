@@ -139,3 +139,8 @@ Copy
     color: color-contrast($value);
   }
 }
+
+
+
+```Escape SVG
+We use the escape-svg function to escape the <, > and # characters for SVG background images. When using the escape-svg function, data URIs must be quoted.
