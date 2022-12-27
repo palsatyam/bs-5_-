@@ -63,3 +63,21 @@ $body-color: #111;
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 // etc
+
+
+```Maps and loops
+Bootstrap includes a handful of Sass maps, key value pairs that make it easier to generate families of related CSS. We use Sass maps for our colors, grid breakpoints, and more. Just like Sass variables, all Sass maps include the !default flag and can be overridden and extended.
+
+```Modify mapAll variables in the $theme-colors map are defined as standalone variables. To modify an existing color in our $theme-colors map, add the following to your custom Sass file:
+
+Example:--
+$primary: #0074d9;
+$danger: #ff4136;
+
+Later on, these variables are set in Bootstrap’s $theme-colors map:
+
+Copy
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
