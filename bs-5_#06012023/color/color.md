@@ -148,3 +148,9 @@ $gray-600
 $gray-700
 $gray-800
 $gray-900
+
+
+$black
+#000
+$white
+#fff
