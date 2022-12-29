@@ -88,3 +88,14 @@ $orange-700
 $orange-800
 $orange-900
 
+```$yellow
+#ffc107
+$yellow-100
+$yellow-200
+$yellow-300
+$yellow-400
+$yellow-500
+$yellow-600
+$yellow-700
+$yellow-800
+$yellow-900
