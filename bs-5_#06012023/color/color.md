@@ -171,3 +171,14 @@ $colors: (
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 );
+
+
+Example
+Here’s how you can use these in your Sass:
+
+Copy
+.alpha { color: $purple; }
+.beta {
+  color: $yellow-300;
+  background-color: $indigo-900;
+}
